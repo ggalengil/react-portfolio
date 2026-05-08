@@ -1,0 +1,11 @@
+.card{
+    
+    background-color: white;
+    padding: 3rem 5rem;
+}
+
+.card p{
+    padding-top: 1rem;
+    line-height: 150%;
+    color: black;
+}

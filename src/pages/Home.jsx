@@ -1,34 +1,47 @@
-import { useState } from 'react'
-import Wave from 'react-wavify'
-import placeholder from "../assets/Portrait_Placeholder.png"
+import { useState } from 'react';
+import './Home.css';
+import Wave from 'react-wavify';
+import placeholder from '../assets/Portrait_Placeholder.png';
+import ExpandableCard from '../components/ExpandableCard/ExpandableCard';
 
-/* V1 */
+/* v1 */
 function openCV(){
-  window.open('/src/assets/CV_ES_GuillermoGarciaAlenGil.pdf', '_blank');
+  window.open('/src/assets/CV_GuillermoGarciaAlenGil.pdf', '_blank');
 }
 
 function Home() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div className="bodyHome">
-        <div className="introCard">
-          <img src={placeholder}></img>
-          <h1>Guillermo García-Alén Gil</h1>
+      <div className='bodyHome'>
+        <div className='introCard'>
+          
+          <img src={placeholder} alt="profile_picture"></img>
+          <h1>Guillermo <br/>García-Alén Gil</h1>
+          <p>Fullstack Developer</p>
         </div>
-        <h3>Fullstack Developer</h3>
-        <div className="clickable">
-          <div className="links">
-            <a href="https://linkedin.com/in/guillermogarciaalengil">LinkedIn</a>
-            <a href="https://github.com/ggalengil">Github</a>
+        <div className='clickable'>
+          <div className='links'>
+            <a href='https://linkedin.com/in/guillermogarciaalengil' target='_blank' rel='noopener noreferrer'>LinkedIn</a>
+            <a href='https://github.com/ggalengil' target='_blank' rel='noopener noreferrer'>Github</a>
           </div>
           <button className='downloadCV' onClick={openCV}>Download CV</button>
         </div>
+        <div className='bar'/>
+        <ExpandableCard title="Experiencia">
+          <p>pruebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        </ExpandableCard>
+        <ExpandableCard title="Selected Projects">
+          <p>pruebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        </ExpandableCard>
+        <ExpandableCard title="Skills">
+          <p>pruebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        </ExpandableCard>
       </div>
-      <div className="waveContainer">
+      <div className='waveContainer'>
         <Wave 
-          className ="wave"
+          className ='wave'
           fill='#5f89e5'
           paused={false}
           options={{
@@ -39,7 +52,7 @@ function Home() {
           }}
         />
         <Wave 
-          className ="wave"
+          className ='wave'
           fill='#5f00e5'
           paused={false}
           options={{
