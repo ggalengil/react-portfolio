@@ -22,10 +22,10 @@ img{
   align-items: center;
 }
 
-h1 {
+.introCard h1 {
   font-size: 75px;
   margin: 10px;
-  color: aliceblue;
+  color: white;
   font-family: 'Jersey 25';
 }
 
