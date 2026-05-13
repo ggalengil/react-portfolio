@@ -7,10 +7,10 @@ function ExpandableCard(props){
     return(
         <motion.div
             whileHover={{
-    y: -4,
-    scale: 1.01,
-    borderColor: '#7777c6'
-  }}
+                y: -4,
+                scale: 1.01,
+                borderColor: '#7777c6'
+            }}
             transition={{
                 layout: {
                     duration: 0.8,
@@ -19,7 +19,7 @@ function ExpandableCard(props){
             }}
             layout 
             onClick={() => setIsOpen(!isOpen)} 
-            className="w-full max-w-4xl mx-auto mb-6 cursor-pointer overflow-hidden rounded-3xl border border-mist-700 bg-zinc-800/70 backdrop-blur-lg shadow-xl ">
+            className="w-85 sm:w-full max-w-4xl mx-auto m-6 cursor-pointer overflow-hidden rounded-3xl border border-mist-700 bg-zinc-800/70 backdrop-blur-lg shadow-xl ">
 
             {/* Header */}
             <motion.div
@@ -47,7 +47,7 @@ function ExpandableCard(props){
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="px-8 pb-8 text-black-300 leading-relaxed"
+                    className="px-8 pb-8 leading-relaxed"
                 >
                     {props.children}
                 </motion.div>

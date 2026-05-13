@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "position": "Fullstack Developer",
+    "downloadCV": "Download CV"
+  },
+
+  "experience": {
+    "title": "Experience",
+
+    "internship": {
+      "position": "Internship",
+      "date": "April 2025 - June 2025",
+
+      "responsibilities": [
+        "Developing new features using an older version of an existing application.",
+        "Fixing both front-end and back-end errors.",
+        "SQL management support.",
+        "Working in an agile development environment."
+      ]
+    }
+  },
+
+  "projects": {
+    "title": "Projects",
+    "portfolio": {
+      "title": "My Portfolio",
+      "description": "Personal website built with React, TailwindCSS, Framer Motion, React Wavify and i18next."
+    },
+    "repository": "View Repository",
+    "comingSoon": "More coming soon"
+  },
+
+  "skills": {
+    "title": "Skills",
+    "codingLanguages": "Coding Languages",
+    "frameworks": "Frameworks/Libraries",
+    "databases": "Databases",
+    "others": "Others"
+  }
+}

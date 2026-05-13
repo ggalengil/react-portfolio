@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "position": "Desarrollador Fullstack",
+    "downloadCV": "Descargar CV"
+  },
+
+  "experience": {
+    "title": "Experiencia",
+
+    "internship": {
+      "position": "Estudiante en prácticas",
+      "date": "Abril 2025 - Junio 2025",
+
+      "responsibilities": [
+        "Desarrollo y mejora de nuevas funcionalidades usando una versión anterior de una aplicación ya existente.",
+        "Corrección de errores tanto en el front-end como el back-end.",
+        "Soporte en la gestión de bases de datos relacionales.",
+        "Trabajo en equipo dentro de un entorno ágil."
+      ]
+    }
+  },
+
+  "projects": {
+    "title": "Proyectos",
+    "portfolio": {
+      "title": "Mi Portfolio",
+      "description": "Página web personal construida con React, TailwindCSS, Framer Motion, React Wavify y i18next."
+    },
+    "repository": "Ver Repositorio",
+    "comingSoon": "Más próximamente"
+  },
+
+  "skills": {
+    "title": "Habilidades",
+    "codingLanguages": "Lenguajes de programación",
+    "frameworks": "Frameworks/Librerías",
+    "databases": "Bases de datos",
+    "others": "Otros"
+  }
+}
