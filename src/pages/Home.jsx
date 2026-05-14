@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import Wave from 'react-wavify';
 import ExpandableCard from '../components/ExpandableCard/ExpandableCard';
-import assets from '../components/Assets/assets';
+import assets from '../assets/index.jsx';
 import { useTranslation } from 'react-i18next';
 
 
@@ -76,11 +76,11 @@ function Home() {
           <div className='flex flex-col items-center-safe'>
             <div className='flex flex-col md:flex-row justify-center items-center gap-6'>
               <img 
-                className="w-48 md:w-60 h-auto rounded-[2rem] shadow-2xl border-4 border-zinc-800" 
+                className="w-48 md:w-60 h-auto rounded-[2rem] shadow-2xl border-4 border-zinc-800"
                 src={assets.portrait} 
                 alt="profile picture"
               />
-              <h1 className="text-5xl md:text-7xl font-bold font-['Jersey_25'] text-mist-200 leading-tight  tracking-wide">Guillermo <br/>García-Alén Gil</h1>
+              <h1 className="text-5xl md:text-7xl md:text-left font-bold font-['Jersey_25'] text-mist-200 leading-tight tracking-wide">Guillermo <br/>García-Alén Gil</h1>
             </div>
             <p className="mt-4 text-lg md:text-3xl font-['Roboto'] text-mist-200 tracking-wider">{t('hero.position')}</p>
             <a className="mt-2 text-sm md:text-lg font-['Roboto'] text-mist-200 tracking-wide hover:text-indigo-300 transition-colors" href="mailto:guillegarciaalen@proton.me">guillegarciaalen@proton.me</a>
@@ -115,7 +115,6 @@ function Home() {
           <div className="w-30 sm:w-50 h-1 bg-indigo-300 rounded-full my-4 opacity-70"/>
 
           {/* Experience Section*/}
-          {/* **Terminar** */}
           <ExpandableCard title={t('experience.title')}>
             <div className="text-left space-y-4 bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-600 border-l-4 border-l-indigo-400 shadow-lg">
               <h3 className="text-xl sm:text-2xl font-bold text-mist-200 font-bold">
@@ -147,7 +146,7 @@ function Home() {
               <div className="w-20 h-1 bg-indigo-300 rounded-full my-4"/>
               <p className='text-base text-mist-200'>{t('projects.portfolio.description')}</p>
               <a 
-                className='text-indigo-300 hover:text-indigo-200 bg-indigo-800 rounded-lg p-3'
+                className='text-indigo-500 hover:text-blue-800 bg-indigo-100 rounded-lg p-3'
                 href="https://github.com/ggalengil/react-portfolio"
                 target='_blank' 
                 rel='noopener noreferrer'
