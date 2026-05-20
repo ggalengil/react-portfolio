@@ -139,14 +139,13 @@ function Home() {
           </ExpandableCard>
 
           {/* Projects Section*/}
-          {/* **Terminar** */}
           <ExpandableCard title={t('projects.title')}>
             <div className='text-left space-y-6 bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-600 border-l-4 border-l-indigo-400 shadow-lg'>
               <h3 className='text-xl sm:text-2xl font-bold text-mist-200'>{t('projects.portfolio.title')}</h3>
               <div className="w-20 h-1 bg-indigo-300 rounded-full my-4"/>
               <p className='text-base text-mist-200'>{t('projects.portfolio.description')}</p>
               <a 
-                className='text-indigo-500 hover:text-blue-800 bg-indigo-100 rounded-lg p-3'
+                className='text-indigo-400 hover:underline'
                 href="https://github.com/ggalengil/react-portfolio"
                 target='_blank' 
                 rel='noopener noreferrer'
